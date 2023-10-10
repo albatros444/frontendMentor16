@@ -1,0 +1,57 @@
+@media screen and (max-width: 420px) {
+  .logo {
+    width: 53px;
+    margin-top: 83px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .subscribe {
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+  form {
+    flex-direction: column;
+    width: 280px;
+    margin: auto;
+    margin-bottom: 114px;
+
+    input {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 5px;
+      padding-bottom: 2px;
+      padding-left: 31px;
+      font-size: 12px;
+      font-weight: 300;
+    }
+    button {
+      position: absolute;
+      width: 280px;
+      top: 45px;
+      height: 40px;
+      padding-bottom: 1px;
+      margin-top: 5px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      transition: all 0.13s ease-in-out;
+    }
+  }
+  .errMessage {
+    font-size: 0.5em;
+    margin: auto;
+    top: 46px;
+    left: 57px;
+    transition: all 0.13s ease-in-out;
+  }
+  .bigImg {
+    width: 322px;
+    margin-bottom: 118px;
+  }
+  .copyright {
+    margin-bottom: 40px;
+    font-size: 10px;
+  }
+}

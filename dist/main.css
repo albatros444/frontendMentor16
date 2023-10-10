@@ -71,15 +71,16 @@ h1 span {
 }
 
 form {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: auto;
   margin-bottom: 85px;
   width: 636px;
-  height: 56px;
 }
 form input {
   width: 420px;
+  height: 56px;
   border-radius: 55px;
   border: 1px solid hsl(222, 44%, 85%);
   padding-left: 29px;
@@ -92,6 +93,7 @@ form input::placeholder {
 }
 form button {
   width: 200px;
+  height: 56px;
   border-radius: 55px;
   padding: 0;
   border: none;
@@ -107,6 +109,20 @@ form button {
   color: white;
   box-shadow: 2px 5px 10px hsl(224, 76%, 87%);
 }
+form button:hover {
+  background-color: hsl(223, 87%, 73%);
+}
+
+.errMessage {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 33px;
+  color: hsl(354, 76%, 60%);
+  font-size: 0.62em;
+  font-weight: 400;
+  font-style: italic;
+}
 
 .bigImg {
   display: block;
@@ -120,18 +136,26 @@ form button {
   justify-content: space-between;
   width: 118px;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 .socialIcons div {
   width: 31px;
   height: 31px;
   border-radius: 30px;
   border: 1px solid hsl(0, 5%, 92%);
+  transition: all 0.13s ease-in-out;
+}
+.socialIcons div:hover {
+  background-color: hsl(223, 87%, 63%);
+}
+.socialIcons div:hover svg {
+  fill: white;
 }
 .socialIcons div svg {
   display: block;
   margin-left: 7px;
   fill: hsl(223, 87%, 63%);
+  transition: all 0.13s ease-in-out;
 }
 .socialIcons div .facebook {
   width: 17px;
@@ -153,6 +177,63 @@ form button {
   font-size: 12px;
   font-weight: 300;
   color: hsl(0, 1%, 67%);
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    width: 53px;
+    margin-top: 83px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .subscribe {
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+  form {
+    flex-direction: column;
+    width: 280px;
+    margin: auto;
+    margin-bottom: 114px;
+  }
+  form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    padding-left: 31px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  form button {
+    position: absolute;
+    width: 280px;
+    top: 45px;
+    height: 40px;
+    padding-bottom: 1px;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    transition: all 0.13s ease-in-out;
+  }
+  .errMessage {
+    font-size: 0.5em;
+    margin: auto;
+    top: 46px;
+    left: 57px;
+    transition: all 0.13s ease-in-out;
+  }
+  .bigImg {
+    width: 322px;
+    margin-bottom: 118px;
+  }
+  .copyright {
+    margin-bottom: 40px;
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

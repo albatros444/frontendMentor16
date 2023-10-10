@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
 
@@ -23,9 +23,14 @@
     <img class="logo" src="./images/logo.svg" alt="" />
     <h1><span>We are launching</span> soon!</h1>
     <p class="subscribe">Subscribe and get notified</p>
-    <form action="">
-      <input type="text" placeholder="Your email address..." />
-      <button>Notify Me</button>
+    <form action="" class="form">
+      <input
+        type="text"
+        class="formInput"
+        placeholder="Your email address..."
+      />
+      <p class="errMessage">Please provide a valid email address</p>
+      <button class="button">Notify Me</button>
     </form>
     <img class="bigImg" src="/images/illustration-dashboard.png" alt="" />
     <div class="socialIcons">
@@ -78,5 +83,6 @@
         >. Coded by <a href="#">Alexander</a>.
       </p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
